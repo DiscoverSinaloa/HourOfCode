@@ -1,207 +1,148 @@
-<!DOCTYPE html>
-<html>  
-  <style>
-    h1{
-   font-size:70px;
-  text-align:center;
+<!-- 3D Slideshow Section --> 
+<style>
+  /* 3D Slideshow */ 
+* {
+	margin: 0;
+	padding: 0;
 }
-p1{
-  font-size:40px;
-  margin-left:300px;
-  margin-top:300px;
-}
-img{
- width:100%;
- height:auto;
- opacity:0.8; 
-}
-.center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 18px;
-  font-size:90px;
-}
-.container {
-  position: relative;
-}
-#para1{
-  height:300px;
-font-family: 'Outfit', sans-serif;
-}
-a:hover{
-  background-color:grey;
-}
-table{
-  text-align:center;
-  margin-left:800px;
-  font-size:25px;
-}
-  </style>
-<head>
-  <!-- Fuente negrita Discover Sinaloa -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@900&display=swap" rel="stylesheet">
-  </head>  
-<body>
 
-<div class="container">
-  <img src="https://visitmexico.com/wp-content/uploads/2022/09/Marina-El-Cid.png" alt="Mazatlan" width="1000" height="300">
-  <p id="para1"  class="center">Discover Sinaloa</p>
-</div>
-  <table>
-      <tr>
-        <th>  Name</th>
-      </tr>
-      <tr>
-        <td> <a href="Ahome.html">Ahome </a></td>
-        <td>  </td>
-        <td>  </td>
- <td>  </td>
- <td>  </td>
- <td>  </td>
-      </tr>
-      <tr>
- <td> Angostura </td>
-        <td>  </td>
-        <td>  </td>
- <td>  </td>
- <td>  </td>
- <td>  </td>
-      </tr>
-      <tr>
-<td> Badiraguato </td>
-        <td>  </td>
-        <td>  </td>
- <td>  </td>
- <td>  </td>
- <td>  </td>
-      </tr>
-      <tr>
-      <td> Concordia </td>
-<td>  </td>
-        <td>  </td>
- <td>  </td>
- <td>  </td>
- <td>  </td>
-      </tr>
-      <tr>  
-   <td> Cosala </td>
-        <td>  </td>
-        <td>  </td>
- <td>  </td>
- <td>  </td>
- <td>  </td>
-      </tr>
-      <tr>
-        <td> Culiacan </td>
-        <td>  </td>
-        <td>  </td>
- <td>  </td>
- <td>  </td>
- <td>  </td>
-      </tr>
-      <tr>
-        <td> Choix </td>
-             <td>  </td>
-        <td>  </td>
- <td>  </td>
- <td>  </td>
- <td>  </td>
-      </tr>
-      <tr>
-        <td> Elota </td>
-               <td>  </td>
-        <td>  </td>
- <td>  </td>
- <td>  </td>
- <td>  </td>
-      </tr>
-      <tr>
-        <td> Escuinapa </td>
-               <td>  </td>
-        <td>  </td>
- <td>  </td>
- <td>  </td>
- <td>  </td>
-      </tr>
-      <tr>
-        <td> El Fuerte </td>
-       <td>  </td>
-        <td>  </td>
- <td>  </td>
- <td>  </td>
- <td>  </td>
-      </tr>
-      <tr>
-        <td> Guasave </td>
-            <td>  </td>
-        <td>  </td>
- <td>  </td>
- <td>  </td>
- <td>  </td>
-      </tr>
-      <tr>
-        <td> Mazatlan </td>
-               <td>  </td>
-        <td>  </td>
- <td>  </td>
- <td>  </td>
- <td>  </td>
-      </tr>
-      <tr>
-        <td> Mocorito </td>
-              <td>  </td>
-        <td>  </td>
- <td>  </td>
- <td>  </td>
- <td>  </td>
-      </tr>
-      <tr>
-        <td> El Rosario </td>
-              <td>  </td>
-        <td>  </td>
- <td>  </td>
- <td>  </td>
- <td>  </td>
-      </tr>
-      <tr>
-        <td> Salvador Alvarado </td>
-       <td>  </td>
-        <td>  </td>
- <td>  </td>
- <td>  </td>
- <td>  </td>
-      </tr>
-      <tr>
-        <td> San Ignacio </td>
-           <td>  </td>
-        <td>  </td>
- <td>  </td>
- <td>  </td>
- <td>  </td>
-      </tr>
-      <tr>
-        <td> Sinaloa </td>
-             <td>  </td>
-        <td>  </td>
- <td>  </td>
- <td>  </td>
- <td>  </td>
-      </tr>
-      <tr>
-        <td> Navolato </td>
-           <td>  </td>
-        <td>  </td>
- <td>  </td>
- <td>  </td>
- <td>  </td>
-      </tr>
-      <tr>
-      
-      
-      
-      </tr>
-    </table>
+html, body {
+	max-width: 100%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	background-color: #6adecd;
+}
+
+#slideshow {
+	margin: 0 auto;
+	padding-top: 50px;
+	height: 600px;
+	width: 100%;
+	background-color: #6adecd;
+	box-sizing: border-box;
+}
+
+.slideshow-title {
+	font-family: 'Allerta Stencil';
+	font-size: 62px;
+	color: #fff;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 25%;
+	letter-spacing: 3px;
+	font-weight: 300;
+}
+
+.sub-heading {
+	padding-top: 50px;
+	font-size: 18px;
+} .sub-heading-two {
+	font-size: 15px;
+} .sub-heading-three {
+	font-size: 13px;
+} .sub-heading-four {
+	font-size: 11px;
+} .sub-heading-five {
+	font-size: 9px;
+} .sub-heading-six {
+	font-size: 7px;
+} .sub-heading-seven {
+	font-size: 5px;
+} .sub-heading-eight {
+	font-size: 3px;
+} .sub-heading-nine {
+	font-size: 1px;
+}
+
+.entire-content {
+	margin: auto;
+	width: 190px;
+	perspective: 1000px;
+	position: relative;
+	padding-top: 80px;
+}
+
+.content-carrousel {
+	width: 100%;
+	position: absolute;
+	float: right;
+	animation: rotar 15s infinite linear;
+	transform-style: preserve-3d;
+}
+
+.content-carrousel:hover {
+	animation-play-state: paused;
+	cursor: pointer;
+}
+
+.content-carrousel figure {
+	width: 100%;
+	height: 120px;
+	border: 1px solid #3b444b;
+	overflow: hidden;
+	position: absolute;
+}
+
+.content-carrousel figure:nth-child(1) {
+	transform: rotateY(0deg) translateZ(300px); 
+} .content-carrousel figure:nth-child(2) {
+	transform: rotateY(40deg) translateZ(300px); 
+} .content-carrousel figure:nth-child(3) {
+	transform: rotateY(80deg) translateZ(300px); 
+} .content-carrousel figure:nth-child(4) {
+	transform: rotateY(120deg) translateZ(300px); 
+} .content-carrousel figure:nth-child(5) {
+	transform: rotateY(160deg) translateZ(300px); 
+} .content-carrousel figure:nth-child(6) {
+	transform: rotateY(200deg) translateZ(300px); 
+} .content-carrousel figure:nth-child(7) {
+	transform: rotateY(240deg) translateZ(300px); 
+} .content-carrousel figure:nth-child(8) {
+	transform: rotateY(280deg) translateZ(300px); 
+} .content-carrousel figure:nth-child(9) {
+	transform: rotateY(320deg) translateZ(300px); 
+} .content-carrousel figure:nth-child(10) {
+	transform: rotateY(360deg) translateZ(300px); 
+} 
+
+.shadow {
+    position: absolute;
+    box-shadow: 0px 0px 20px 0px #000;
+    border-radius: 1px;
+}
+
+.content-carrousel img {
+	image-rendering: auto;
+	transition: all 300ms;
+	width: 100%;
+	height: 100%;
+}
+
+.content-carrousel img:hover {
+	transform: scale(1.2);
+	transition: all 300ms;
+}
+
+@keyframes rotar {
+	from {
+		transform: rotateY(0deg);
+	} to {
+		transform: rotateY(360deg);
+	}
+}
+</style>
+<section id="slideshow">
+			<div class="entire-content">
+				<div class="content-carrousel">
+					<figure class="shadow"><img src="https://www.ecured.cu/images/7/70/Mapa_de_sinaloa.gif"/></figure>
+					<figure class="shadow"><img src="https://newsweekespanol.com/wp-content/uploads/2019/04/Group-546-e1556065094111.jpg"/></figure>
+					<figure class="shadow"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/fa/4a/2e/malecon.jpg?w=700&h=500&s=1"/></figure>
+					<figure class="shadow"><img src="https://posadadonporfirio.com.mx/wp-content/uploads/2023/09/playadesinaloa-copia.webp"/></figure>
+					<figure class="shadow"><img src="https://mexicoturista.com/wp-content/uploads/2023/04/Diseno-sin-titulo-8-1024x576.webp"/></figure>
+					<figure class="shadow"><img src="https://noro.mx/wp-content/uploads/2023/06/2-surf-en-sinaloa-las-8-mejores-playas-para-surcar-las-olas.jpg"/></figure>
+					<figure class="shadow"><img src="https://images.milenio.com/1QY3al8QRl3A4SqQHsQRPBdCZV8=/345x237/uploads/media/2022/12/25/en-sinaloa-se-encuentra-uno.jpg"/></figure>
+					<figure class="shadow"><img src="https://www.hotelesmision.com.mx/Hoteles-Mision-Destinos-Sinaloa-Mazatlan.jpg"/></figure>
+					<figure class="shadow"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSdRMFwfzNDUINm7YiCeVaAZMX3Gp55I1D-A&usqp=CAU"/></figure>
+		</div>
+	</div>
+</section>
